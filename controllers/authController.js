@@ -26,5 +26,7 @@ const authController = {
       res.status(500).json({ message: 'Login failed' }); 
     } 
   } 
-}; 
+};
+
+module.exports = authController;
  
