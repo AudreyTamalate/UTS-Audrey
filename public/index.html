@@ -98,8 +98,8 @@
           <option value="Organisasi">Organisasi</option>
           <option value="Pribadi">Pribadi</option>
         </select>
-        <label for="newDeadline">Deadline:</label>
-        <input type="date" id="newDeadline" name="newDeadline" required>
+        <label for="newDeadline">Deadline (YYYY-MM-DD):</label>
+        <input type="date" id="newDeadline" name="newDeadline" required style="width:100%; margin-bottom:10px;">
         <div class="status-container">
           <input type="checkbox" id="newStatus">
           <label for="newStatus">Tugas Selesai</label>
@@ -110,17 +110,10 @@
         </div>
       </form>
     </div>
-    <div id="deleteModal" class="modal">
-      <div class="modal-content">
-        <h2>Konfirmasi Hapus</h2>
-        <p>Apakah Anda yakin ingin menghapus tugas ini?</p>
-        <button onclick="confirmDelete()">Hapus</button>
-        <button onclick="closeDeleteModal()">Batal</button>
-      </div>
-    </div>      
   </div>
   
   <script src="script.js"></script>
+  
 </body>
 
 </html>

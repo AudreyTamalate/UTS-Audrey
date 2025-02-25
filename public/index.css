@@ -192,7 +192,7 @@ p {
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    align-items: center; /* Ini akan membuat modal benar-benar di tengah */
+    align-items: center; 
 }
   
 .modal-content {
@@ -202,14 +202,14 @@ p {
     width: 350px;
     max-width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left; /* Biar semua isi modal rata kiri */
+    text-align: left; 
 }
   
 .modal-content label {
     font-weight: bold;
     display: block;
     margin-top: 10px;
-    text-align: left; /* Ini memastikan label tetap rata kiri */
+    text-align: left; 
 }
   
 .modal-content input,
@@ -241,7 +241,7 @@ p {
 .button-group {
     margin-top: 15px;
     display: flex;
-    justify-content: flex-end; /* Biar tombol ada di kanan */
+    justify-content: flex-end; 
     gap: 10px;
 }
   
