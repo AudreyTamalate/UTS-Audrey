@@ -1,4 +1,5 @@
 # UTS Perancangan dan Pemrograman Web 2 Audrey Tamalate
+link github : https://github.com/AudreyTamalate/UTS-Audrey.git 
 
 ## Deskripsi Proyek
 Aplikasi ini dikembangkan sebagai tugas Mini Project UTS dalam mata kuliah Perancangan dan Pemrograman Web. 
