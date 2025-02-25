@@ -1,13 +1,15 @@
-const Task = require('../models/taskModel'); 
+const Task = require('../models/taskModel');
 const taskController = { 
   createTask: async (req, res) => { 
-    const { title, category, deadline, status } = req.body; 
-    const userId = req.user.id; 
+    const { title, category, deadline, status } = req.body;
+    const userId = req.user.id;
     try { 
-      const taskId = await Task.create(userId, title, category, deadline, status); 
-      res.status(201).json({ taskId }); 
+      // Perbaiki pemanggilan create dengan object sebagai parameter
+      const task = await Task.create({ userId, title, category, deadline, status });
+      res.status(201).json({ taskId: task.id });
     } catch (err) { 
-      res.status(500).json({ message: 'Task creation failed' }); 
+      console.error('Error creating task:', err);
+      res.status(500).json({ message: 'Task creation failed', error: err.message });
     } 
   }, 
   getTasks: async (req, res) => { 
@@ -38,6 +40,6 @@ const taskController = {
       res.status(500).json({ message: 'Task deletion failed' }); 
     } 
   } 
-}; 
- 
-module.exports = taskController; 
+};
+
+module.exports = taskController;
