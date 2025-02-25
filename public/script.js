@@ -98,7 +98,7 @@ function filterTasks() {
         <td>${task.status}</td>
         <td>
           <button onclick="editTask('${task.id}')">
-          <i class="fa-solid fa-pen-to-square" style="color:rgb(254, 189, 98);"></i>
+          <i class="fa-solid fa-pen-to-square" style="color:rgb(0, 0, 0);"></i>
           </button>
           <button onclick="deleteTask('${task.id}')">
           <i class="fa-solid fa-trash" style="color: #fa3e00;"></i>
