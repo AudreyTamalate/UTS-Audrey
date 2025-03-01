@@ -157,7 +157,7 @@ document.getElementById("editForm").addEventListener("submit", function (e) {
   const token = localStorage.getItem("token");
   const newTitle = document.getElementById("newTitle").value;
   const newCategory = document.getElementById("newCategory").value;
-  const newDeadline = document.getElementById("newDeadline").value; 
+  const newDeadline = document.getElementById("newDeadline").value;
   const newStatus = document.getElementById("newStatus").checked ? "Selesai" : "Belum Selesai";
 
   fetch(`/tasks/${currentTaskId}`, {
@@ -169,7 +169,7 @@ document.getElementById("editForm").addEventListener("submit", function (e) {
     body: JSON.stringify({
       title: newTitle,
       category: newCategory,
-      deadline: newDeadline, 
+      deadline: newDeadline,
       status: newStatus
     })
   })
