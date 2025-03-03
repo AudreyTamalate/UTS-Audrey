@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Manajemen Tugas - Register & Login</title>
+  <title>Manajemen Tugas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...YOUR_INTEGRITY_HASH..." crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -57,9 +57,8 @@
       <h2>Welcome!</h2>
       <button class="logout-btn" onclick="logout()"><i class="fa fa-sign-out-alt"></i> Logout</button>
     </nav>
-    
+    <h2>Tambah Tugas Baru</h2>
     <div id="tambahtugas-container" class="tambahtugas-container">
-      <h2>Tambah Tugas Baru</h2>
       <input type="text" id="task-title" placeholder="Judul Tugas">
       <select id="task-category">
         <option value="" disabled selected>Pilih Kategori</option>
@@ -68,7 +67,7 @@
         <option value="Pribadi">Pribadi</option>
       </select>
       <input type="date" id="task-deadline">
-      <button onclick="addTask()" style="border: 0;"><i class="fa fa-plus" style="padding: 10px;"></i>Tambah</button>
+      <button onclick="addTask()" style="border: 0;"><i class="fa fa-plus" style="padding: 5px;"></i>Tambah</button>
     </div>
 
     <h2>Daftar Tugas</h2>

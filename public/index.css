@@ -166,13 +166,17 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#tambahtugas-container {
-    width: 80%;
-    padding: 15px;
-    background: #ffffff;
-    border-radius: 8px;
-    margin-left: 100px;
-}
+.tambahtugas-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+.tambahtugas-container input,
+.tambahtugas-container select,
+.tambahtugas-container button {
+    padding: 10px;
+  }
 
 .modal {
     display: none; /* Akan diubah ke grid saat modal aktif */
